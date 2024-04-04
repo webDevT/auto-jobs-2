@@ -7,6 +7,9 @@
 	/**/
 	.image
 		object-position: bottom 0 right -13vw
+	.header 
+		.container-fluid 
+			width: 90vw
 
 
 /* Medium Devices, Desktops */
@@ -23,14 +26,27 @@
 	/**/
 	.text
 		font-size: 32px	
+	.footer-bottom .container
+		display: flex 
+		flex-direction: column
+	.pull-right  
+		margin-top: 30px
+	.pull-left
+		li 
+			display: flex 
+			justify-content: center 
+			flex-wrap: wrap
+			a 
+				margin-top: 5px 
+				margin-bottom: 5px
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 992px)
 	/**/
 	.content__row
-		max-height: auto 
-		height: 3000px	
+		max-height: 3000px
+		height: auto	
 		flex-direction: column
 	.content__col
 		width: 100%
@@ -41,6 +57,51 @@
 	.content__col-text
 		padding-top: 80px 
 		padding-bottom: 80px
+	.menu
+		display: none
+	.menu-btn
+		display: flex
+		width: 37px 
+		height: 33px 
+		background: #1ab394
+		font-size: 14px
+		justify-content: center 
+		align-items: center
+		border-radius: 4px 
+		i 
+			color: #fff
+	.header 
+		position: relative
+	.menu.active 
+		display: block
+		position: absolute
+		top: 100%
+		left: 0 
+		width: 100%
+		ul 
+			display: flex 
+			flex-direction: column-reverse
+			width: 100%
+			li 
+				width: 100% 
+				margin-left: 0
+				padding: 1px 2px
+				a 
+					width: 100%
+					display: flex
+					color: #fff 
+					justify-content: center 
+					align-items: center
+			.blue-btn
+				background: #ed5565
+			.menu__link
+				background: #a0bc45 
+				padding: 9px 14px
+				color: #fff
+				font-size: 14px
+				border-radius: 3px
+				font-weight: 400
+		
 
 
 /* Extra Small Devices, Phones */
@@ -58,6 +119,10 @@
 	.content__col-text 
 		padding-top: 20.356vw
 		padding-bottom: 20.356vw
+	.footer__top 
+		font-size: 30px
+		a 
+			text-decoration: underline
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
